@@ -1,0 +1,75 @@
+
+
+/*
+Colors used:
+Primary Color (Pigment Blue): #333399;
+Secondary Color (Bdazzled Blue): #336699;
+Accent Color (Deep Saffron): #FF9933;
+Background Color (White): #FFFFFF;
+Text color (Charcoal)   #3D4D4A
+*/
+
+
+<body>
+
+img {
+  width: 100%;
+}
+
+<style>
+body {
+  background-color: #ffffff;
+  font-family 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #3d4d4a;
+}
+h1, h2, h3, h4 { line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+</style>
+
+.button {
+  dispaly: inline-block;
+  background-color: #ff9933;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #3d4d4a;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background color: transparent;
+  color: #336699;
+  text-transform: uppercase;
+  border: 2px solid #336699;
+}
+
+.button.contact:hover {
+  background color: #336699;
+  color: #3d4d4a;
+}
