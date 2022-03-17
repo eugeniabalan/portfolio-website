@@ -16,16 +16,25 @@ img {
   width: 100%;
 }
 
-<style>
-body {
+* {
+  box-sizing: border-box;
+}
+
+body
+header {
   background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
   font-family 'Lexend', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #3d4d4a;
 }
-h1, h2, h3, h4 { line-height: 1.4;
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
 }
 h1 {
   font-size: 2.75em
@@ -44,7 +53,6 @@ h4 {
   font-weight: 400;
 }
 
-</style>
 
 .button {
   dispaly: inline-block;
@@ -72,4 +80,59 @@ h4 {
 .button.contact:hover {
   background color: #336699;
   color: #3d4d4a;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25 px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #336699;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #3d4d4a
+}
+
+nav > ul > li> a: hover {
+  transition: 0.3s;
+  background color: #336699
+}
+
+#hero {
+  background-color: #ffffff
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
