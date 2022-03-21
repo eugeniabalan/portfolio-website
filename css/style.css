@@ -193,9 +193,10 @@ main {
   nav > ul {
     list-style-type: none;
     padding: 0 15px;
-    width: : auto;
+    width: auto;
     float: right;
     margin-top: 4px;
+    display: flex;
   }
 
   .navtoggle li:not(:last-child) {
