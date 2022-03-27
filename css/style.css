@@ -7,7 +7,6 @@ Background Color (White): #FFFFFF;
 Text color (Charcoal)   #3D4D4A
 */
 
-
 * {
   box-sizing: border-box;
 }
@@ -105,9 +104,9 @@ p {
 }
 
 .row::after {
-content: "";
-clear: both;
-display: table;
+  content: "";
+  clear: both;
+  display: table;
   margin: 25px 0;
   /* 25 px top and bottom, 0 left and right */
 }
@@ -125,7 +124,11 @@ display: table;
   max-width: 150px;
 }
 
-nav>ul>li>a {
+nav > ul > li {
+  list-style-type: none;
+}
+
+nav > ul > li > a {
   display: inline-block;
   padding: 8px 16px;
   margin-top: 8px;
@@ -135,9 +138,29 @@ nav>ul>li>a {
   color: #3d4d4a;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   transition: 0.3s;
   background: #336699;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navtoggle ul > li:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navtoggle ul > li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive ul > li {
+  display: block;
 }
 
 .row {
@@ -167,44 +190,43 @@ main {
 }
 
 @media only screen and (min-width: 641px) {
-
-  .navtoggle li:not (:last-child) {
+  .navtoggle ul > li:not(:last-child) {
     display: inline-block;
   }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-.navtoggle. {
-  position: relative;
-}
+  .navtoggle {
+    position: relative;
+  }
 
-.navtoggle.responsive {
-  position: relative;
-  display: block;
-}
+  .navtoggle.responsive {
+    position: relative;
+    display: block;
+  }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
 
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
 
-.navtoggle.responsive li: last-child {
-  padding: 0 0 10px;
-}
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
   }
 
   header {
@@ -217,7 +239,7 @@ main {
     margin-top: 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
     list-style-type: none;
     padding: 0;
@@ -233,13 +255,15 @@ main {
     display: flex;
   }
 
-  .navtoggle li:not(:last-child) {
+  .navtoggle li:last-child {
     display: none;
   }
 
   .navtoggle,
   .navtoggle.responsive {
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
   .col-lg-6 {
@@ -250,9 +274,9 @@ main {
     width: 60%;
   }
 
-.col-lg-5 {
-  width: 40%;
-}
+  .col-lg-5 {
+    width: 40%;
+  }
 
   [class*="col-"] {
     float: left;
@@ -261,21 +285,21 @@ main {
 }
 
 @media only screen and (mid-width: 1024px) {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+@media only screen and (min-width: 1920px) {
+}
 
-@media only screen and (min-width: 1920px) {}
-
-  #about-page h3 {
-    margin-top: 0;
-  }
+#about-page h3 {
+  margin-top: 0;
+}
 
 #svg {
   width: 100%;
@@ -284,16 +308,17 @@ box-sizing: border-box;
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;
-}
+  0% {
+    fill: #edc655;
+  }
 
-50% {
-  fill: #fcffad;
-}
+  50% {
+    fill: #fcffad;
+  }
 
-100% {
-  fill: #f76414;
-}
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -309,7 +334,8 @@ box-sizing: border-box;
     transform: translate(0, 1px);
   }
 
-  to {transform: translate(200px, 1px);
+  to {
+    transform: translate(200px, 1px);
   }
 }
 
@@ -323,8 +349,11 @@ box-sizing: border-box;
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);}
-  to {transform: translate(100px, 48px);}
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
