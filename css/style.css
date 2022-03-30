@@ -6,13 +6,12 @@ Accent Color (Deep Saffron): #FF9933;
 Background Color (White): #FFFFFF;
 Text color (Charcoal)   #3D4D4A
 */
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: unset;
   padding: 10px 0;
   margin: 10px;
@@ -61,14 +60,14 @@ p {
 
 .button {
   display: inline-block;
-  background-color: #ff9933;
-  color: #ffffff;
+  background-color: #f93;
+  color: #fff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #3d4d4a;
-  trnasition-duration: 0.2s;
+  transition-duration: 0.2s;
   transition-property: opacity;
 }
 
@@ -79,7 +78,7 @@ p {
 
 .button:active {
   display: inline-block;
-  background-color: #ff9933;
+  background-color: #f93;
 }
 
 .button.contact {
@@ -124,11 +123,11 @@ p {
   max-width: 150px;
 }
 
-nav > ul > li {
+nav>ul>li {
   list-style-type: none;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   display: inline-block;
   padding: 8px 16px;
   margin-top: 8px;
@@ -138,7 +137,7 @@ nav > ul > li > a {
   color: #3d4d4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   transition: 0.3s;
   background: #336699;
 }
@@ -149,17 +148,17 @@ nav > ul > li > a:hover {
   justify-content: space-between;
 }
 
-.navtoggle ul > li:last-child {
+.navtoggle ul>li:last-child {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.navtoggle ul > li:not(:last-child) {
+.navtoggle ul>li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.responsive ul > li {
+.navtoggle.responsive ul>li {
   display: block;
 }
 
@@ -190,7 +189,7 @@ main {
 }
 
 @media only screen and (min-width: 641px) {
-  .navtoggle ul > li:not(:last-child) {
+  .navtoggle ul>li:not(:last-child) {
     display: inline-block;
   }
 
@@ -239,14 +238,14 @@ main {
     margin-top: 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
-  nav > ul {
+  nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
@@ -285,8 +284,7 @@ main {
 }
 
 @media only screen and (mid-width: 1024px) {
-  box-sizing: border-box;
-}
+  }
 
 .container {
   max-width: 1200px;
@@ -294,8 +292,7 @@ main {
   margin-right: auto;
 }
 
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
 
 #about-page h3 {
   margin-top: 0;
@@ -343,7 +340,7 @@ main {
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
-  animation-direction: alternative;
+  animation-direction: alternate;
   animation-timing-function: linear;
 }
 
@@ -351,11 +348,12 @@ main {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alernate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
