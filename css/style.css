@@ -191,6 +191,13 @@ main {
 footer {
   clear: both;
 }
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media only screen and (min-width: 641px) {
   .navtoggle ul > li:not(:last-child) {
     display: inline-block;
