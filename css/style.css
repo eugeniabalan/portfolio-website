@@ -203,6 +203,15 @@ header > div {
   align-items: center;
 }
 
+.social-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
 @media only screen and (min-width: 641px) {
   .navtoggle ul > li:not(:last-child) {
     display: inline-block;
@@ -280,7 +289,6 @@ header > div {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-}
   }
 
   .col-lg-6 {
