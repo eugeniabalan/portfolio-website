@@ -13,10 +13,10 @@ Text color (Charcoal)   #3D4D4A
 body {
   background-color: #fff;
   text-align: unset;
-  padding: 10px 0;
-  margin: 10px;
+  padding: 8px 0;
+  margin: 8px;
   font-family: "Lexend", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #3d4d4a;
