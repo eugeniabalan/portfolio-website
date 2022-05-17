@@ -311,6 +311,10 @@ header>div {
   }
 }
 
+#project-links {
+  scroll-margin-top: 4rem;
+}
+
 @media only screen and (mid-width: 1024px) {}
 
 .container {
