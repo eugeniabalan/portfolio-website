@@ -55,7 +55,8 @@ img {
   width: 100%;
 }
 
-p,li {
+p,
+li {
   font-size: 1.25em;
   font-weight: 300;
 }
@@ -95,7 +96,7 @@ p,li {
 
 .button.contact:hover {
   opacity: 0.9;
-  background: #FF9933;
+  background: #ff9933;
   color: #3d4d4a;
 }
 
@@ -125,11 +126,11 @@ p,li {
   max-width: 150px;
 }
 
-nav>ul>li {
+nav > ul > li {
   list-style-type: none;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   display: inline-block;
   padding: 8px 16px;
   margin-top: 8px;
@@ -139,9 +140,9 @@ nav>ul>li>a {
   color: #3d4d4a;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   transition: 0.3s;
-  background: #FEAE49;
+  background: #feae49;
 }
 
 .navtoggle,
@@ -150,17 +151,17 @@ nav>ul>li>a:hover {
   justify-content: space-between;
 }
 
-.navtoggle ul>li:last-child {
+.navtoggle ul > li:last-child {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.navtoggle ul>li:not(:last-child) {
+.navtoggle ul > li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.responsive ul>li {
+.navtoggle.responsive ul > li {
   display: block;
 }
 
@@ -199,7 +200,7 @@ header {
   top: 0;
 }
 
-header>div {
+header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,7 +216,7 @@ header>div {
 }
 
 @media only screen and (min-width: 641px) {
-  .navtoggle ul>li:not(:last-child) {
+  .navtoggle ul > li:not(:last-child) {
     display: inline-block;
   }
 
@@ -264,14 +265,14 @@ header>div {
     margin-top: 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
-  nav>ul {
+  nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
@@ -309,21 +310,26 @@ header>div {
     float: left;
     padding: 10px;
   }
+
+  #project-links {
+    scroll-margin-top: 3rem;
+  }
 }
 
-#project-links {
-  scroll-margin-top: 4rem;
+@media only screen and (mid-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project-links {
+    scroll-margin-top: 4rem;
+  }
 }
 
-@media only screen and (mid-width: 1024px) {}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 1920px) {
 }
-
-@media only screen and (min-width: 1920px) {}
 
 #about-page h3 {
   margin-top: 0;
