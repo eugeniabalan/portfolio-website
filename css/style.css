@@ -405,6 +405,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  max-height: min-content;
   position: relative;
   margin: auto;
 }
