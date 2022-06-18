@@ -8,31 +8,34 @@
   <!--Link to external CDN normalize.min.css file-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <!-- End of the CDN normalize.min.css file-->
-  <!-- Google font-->
+  <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet" />
-  <!-- styling continues in css stylesheet -->
+  <!-- Custom css stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html">
-        <picture>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
           <img class="logo" src="img/logo.png" alt="Logo" />
-        </picture>
-      </a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="index.html#project-links">Work</a></li>
-          <li><a href="index.html#my-illustrations">Illustrations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="index.html#project-links">Work</a></li>
+            <li><a href="index.html#my-illustrations">Illustrations</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -484,45 +487,48 @@
     </div>
   </div>
 
-</br>
-<footer id="contact">
-  <div class="container">
-    <div class="row">
-      <h3>Let's Work Together!</h3>
-    </div>
-    <div>
-      <p>
-        Would you like to work with me? Send me an Email to discuss opportunities.
-      </p>
-    </div>
-  </div>
-
-  <div class="container">
-    <a href="Contact.html" class="button contact">Email me</a>
-  </div>
-
-  <div class="container">
-    <ul class="social-icons">
-      <li>
-        <a href="https://www.linkedin.com/in/eugenia-balan-50a687b3/" class="social" target="_blank">
-          <img src="img/LinkedIn.svg" width="32" height="32" alt="LinkedIn icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.behance.net/eugeniabalan" class="social" target="_blank">
-          <img src="img/Behance.svg" width="32" height="32" alt="Behance icon" />
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5">
-        <h5>Copyright Eugenia Balan 2022</h5>
+  </br>
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <h3>Let's Work Together!</h3>
+      </div>
+      <div>
+        <p>
+          Would you like to work with me? Send me an Email to discuss opportunities.
+        </p>
       </div>
     </div>
-  </div>
-</footer>
+
+    <div class="container">
+      <a href="Contact.html" class="button contact">Email me</a>
+    </div>
+
+    <div class="container">
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/eugenia-balan-50a687b3/" class="social" target="_blank">
+            <img src="img/LinkedIn.svg" width="32" height="32" alt="LinkedIn icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/eugeniabalan" class="social" target="_blank">
+            <img src="img/Behance.svg" width="32" height="32" alt="Behance icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h5>Copyright Eugenia Balan 2022</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
