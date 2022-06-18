@@ -315,8 +315,9 @@ header > div {
     padding: 10px;
   }
 
-  #project-links {
-    scroll-margin-top: 3rem;
+  #project-links,
+  #my-illustrations {
+    scroll-margin-top: 9rem;
   }
 }
 
@@ -327,7 +328,8 @@ header > div {
     margin-right: auto;
   }
 
-  #project-links {
+  #project-links,
+  #my-illustrations {
     scroll-margin-top: 4rem;
   }
 }
