@@ -55,6 +55,17 @@ img {
   width: 100%;
 }
 
+.crop {
+  max-width:500px;
+  height: 505px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+  height: auto;
+}
+
 picture {
   margin-top: 10px;
 }
@@ -317,7 +328,7 @@ header > div {
 
   #project-links,
   #my-illustrations {
-    scroll-margin-top: 9rem;
+    scroll-margin-top: 8rem;
   }
 }
 
@@ -330,7 +341,7 @@ header > div {
 
   #project-links,
   #my-illustrations {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 8rem;
   }
 }
 
@@ -401,4 +412,6 @@ header > div {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.mySlides {display:none;}
+.mySlides {
+  display: none;
+}
