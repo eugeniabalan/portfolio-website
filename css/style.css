@@ -230,6 +230,14 @@ header > div {
   display: inline-block;
 }
 
+@media only screen and (max-width: 640px) {
+  svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 641px) {
   .navtoggle ul > li:not(:last-child) {
     display: inline-block;
@@ -350,12 +358,6 @@ header > div {
 
 #about-page h3 {
   margin-top: 0;
-}
-
-#svg {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 @keyframes color-change {
