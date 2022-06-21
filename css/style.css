@@ -56,7 +56,7 @@ img {
 }
 
 .crop {
-  max-width:500px;
+  max-width: 500px;
   height: 505px;
   overflow: hidden;
 }
@@ -414,4 +414,33 @@ header > div {
 
 .mySlides {
   display: none;
+}
+
+#scroolBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scroolBtn:hover {
+  background-color: #feae49;
+}
+
+.arrowUp {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
