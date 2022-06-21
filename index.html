@@ -4,17 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
   <title>Eugenia Balan UI/UX Designer</title>
   <!--Link to external CDN normalize.min.css file-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <!-- End of the CDN normalize.min.css file-->
   <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet" />
-   <!-- Slideshow css stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Slideshow css stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <!-- Custom css stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
@@ -46,10 +45,19 @@
   <main>
     <div id="hero">
       <div class="container">
-      </br>
-      <div class="center">
-          <h1> Welcome to my website!</h1>
-      </div>
+        </br>
+        <!-- Added the Scroll To Top Button -->
+        <button 
+          onclick="topFunction()" 
+          id="scroolBtn" 
+          title="Go to top"
+          type="button">
+            <span class="arrowUp"></span>
+            <b><br>Top</b>
+        </button>
+        <div class="center">
+            <h1> Welcome to my website!</h1>
+        </div>
           <p>
             I am Eugenia, an UI/UX designer and illustrator based in Nürnberg.
             I am passionate about
@@ -58,7 +66,7 @@
             User Experience.
             Design and illustration are a part of my daily life now and it's a great pleasure
             to explore them in so many different ways!
-      Take a look at my projects and don't hesistate to contact me if you are interested in working together!
+            Take a look at my projects and don't hesistate to contact me if you are interested in working together!
           </p>
         <br>
         <div class="center">
@@ -77,8 +85,8 @@
           <img class="mySlides" src="img/Slides/My_Illustration_Slide_8.jpeg" style="width:100%">
           <img class="mySlides" src="img/Slides/My_Illustration_Slide_9.jpeg" style="width:100%">
         </div>
-      <br>
-      <br>
+        <br>
+        <br>
         <div id="work">
           <div class="center">
             <div id="project-links">
@@ -1124,8 +1132,9 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
   <script src="js/slideShow.js"></script>
+  <script src="js/scroolBtn.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
