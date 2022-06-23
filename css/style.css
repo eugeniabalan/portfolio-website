@@ -418,7 +418,7 @@ header > div {
   display: none;
 }
 
-#scroolBtn {
+#scrollBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -434,7 +434,7 @@ header > div {
   border-radius: 4px;
 }
 
-#scroolBtn:hover {
+#scrollBtn:hover {
   background-color: #feae49;
 }
 
