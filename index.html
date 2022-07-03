@@ -77,15 +77,15 @@
           </div>
         </div>
         <div class="w3-content w3-section crop">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_1.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_2.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_3.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_4.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_5.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_6.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_7.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_8.jpeg" style="width:100%">
-          <img class="mySlides" src="img/Slides/My_Illustration_Slide_9.jpeg" style="width:100%">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_1.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_2.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_3.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_4.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_5.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_6.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_7.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_8.jpeg" onclick="onClick(this)">
+          <img class="mySlides w3-hover-opacity" src="img/Slides/My_Illustration_Slide_9.jpeg" onclick="onClick(this)">
         </div>
         <br>
         <br>
@@ -100,7 +100,7 @@
               <div class="col-lg-6 col-lg-7">
                 <picture>
                   <source srcset="img/Pocket_Advisor/Artboard_cover_1.jpg" />
-                  <img src="img/Pocket_Advisor/Artboard_cover_2.jpg" alt="Image of Work Sample" />
+                  <img src="img/Pocket_Advisor/Artboard_cover_2.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Pocket Advisor project" />
                   </a>
                 </picture>
               </div>
@@ -118,7 +118,7 @@
               <div class="col-lg-6 col-lg-7">
                 <picture>
                   <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg" />
-                  <img src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" alt="Image of Work Sample" />
+                  <img src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Easy Cooking project" />
                 </picture>
               </div>
               <div class="col-lg-6 col-lg-5">
@@ -135,7 +135,7 @@
               <div class="col-lg-6 col-lg-7">
                 <picture>
                   <source srcset="img/Connecting_Ideas/Artboard_1-1x.jpg" />
-                  <img src="img/Connecting_Ideas/Artboard_1-2x.jpg" alt="Image of Work Sample" />
+                  <img src="img/Connecting_Ideas/Artboard_1-2x.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Connecting Ideas project" />
                 </picture>
               </div>
               <div class="col-lg-6 col-lg-5">
@@ -145,6 +145,16 @@
                 </p>
                 <a href="Connecting_Ideas.html" class="button">View Case Study</a>
               </div>
+              <!-- Modal Gallery for full size images on click-->
+              <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption" class="w3-opacity w3-large"></p>
+                </div>
+          </div>
             </div>
 
             <div class="container">
@@ -1134,8 +1144,12 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
+  <!-- Added the Slideshow functions -->
   <script src="js/slideShow.js"></script>
+  <!-- Added the Scroll To Top Button functions -->
   <script src="js/scrollBtn.js"></script>
+  <!-- Added the Modal Gallery functions -->
+  <script src="js/modalGallery.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
