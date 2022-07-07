@@ -27,6 +27,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  text-align: center;
 }
 
 h1 {
@@ -137,6 +138,7 @@ li {
 
 .center {
   text-align: unset;
+  padding: 2px 2px;
 }
 
 .logo {
@@ -327,14 +329,17 @@ header > div {
 
   .col-lg-6 {
     width: 50%;
+    padding: 2px 2px;
   }
 
   .col-lg-7 {
     width: 60%;
+    padding: 2px 2px;
   }
 
   .col-lg-5 {
     width: 40%;
+    padding: 2px 2px;
   }
 
   [class*="col-"] {
