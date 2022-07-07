@@ -55,109 +55,120 @@
         <span class="arrowUp"></span>
         <b><br />Top</b>
       </button>
+      <!-- The Case Study Section -->
       <div class="center">
         <h1>Pocket Advisor Case Study</h1>
       </div>
       </div>
       <div class="container">
         <div class="row">
-          <picture>
-            <source srcset="img/Pocket_Advisor/Artboard_cover_1.jpg" />
-            <img src="img/Pocket_Advisor/Artboard_cover_2.jpg" alt="Image of Work Sample" />
-          </picture>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Pocket_Advisor/Artboard_cover_1.jpg" />
+              <img class="w3-hover-opacity" src="img/Pocket_Advisor/Artboard_cover_2.jpg" onclick="onClick(this)"/>
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <h2>About Pocket Advisor</h2>
+            <p>
+              Pocket Advisor is a money-saving app that helps people save
+              money for a future expenditure or purchase. It guides users how to keep
+              on track easily with their expenses, incomes and savings.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2>The Challenge</h2>
+            <p>
+              Create a responsive web app for people who do not like
+              to deal with their finances.
+              Give users clear information about what they can do to better save.
+            </p>
+          </div>
         </div>
       </div>
       <div class="container">
-        <h2>About Pocket Advisor</h2>
-        <p>
-          Pocket Advisor is a money-saving app that helps people save
-          money for a future expenditure or purchase. It guides users how to keep
-          on track easily with their expenses, incomes and savings.
-        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>My Role</h2>
+              <ol>
+                <li>
+                  Understanding and defining the problem
+                </li>
+                <li>
+                  Conduct a competitor Analysis
+                </li>
+                <li>
+                  Create user stories and based on them user flow diagrams
+                </li>
+                <li>
+                  Wireframing and Prototyping
+                </li>
+                <li>
+                  User testing and Implementing the feedback
+                </li>
+                <li>
+                  Create a product Brand
+                </li>
+                <li>
+                  Visual and User Interface design
+                </li>
+              </ol>
+              <h2>Solutions</h2>
+              <ul>
+                <li>Personalized account with detailed information on user expenditure and incomes</li>
+                <li>A functionality of setting saving goals</li>
+                <li>A complete overview of the expenditures, incomes and savings</li>
+              </ul>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Pocket_Advisor/Artboard_2-1.jpg" />
+              <img class="w3-hover-opacity" src="img/Pocket_Advisor/Artboard_2-2.jpg" onclick="onClick(this)"/>
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Pocket_Advisor/Artboard_4-1.jpg" />
+              <img class="w3-hover-opacity" src="img/Pocket_Advisor/Artboard_4-2.jpg" onclick="onClick(this)"/>
+            </picture>
+          </div>
+        </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="center">
+            <h1>Discovery</h1>
+          </div>
+          <div class="col-lg-6">
+            <h2>Defining the Problem</h2>
+            <p>
+              People who don't like to deal with their finances find it difficult to create saving goals.
+              Knowing how much they spend and on what can help them make saving plans. Having an overview of all the expenditures, incomes and savings in a one place can make
+              the mission of saving easier.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <h2>The Design Process</h2>
+            <picture>
+              <source srcset="img/Pocket_Advisor/Artboard_3-1.png" />
+              <img class="w3-hover-opacity" src="img/Pocket_Advisor/Artboard_3-2.png" onclick="onClick(this)"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Gallery for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+    </div>
   </main>
-  </br>
-  <div class="container">
-    <h2>The Challenge</h2>
-    <p>
-      Create a responsive web app for people who do not like
-      to deal with their finances.
-      Give users clear information about what they can do to better save.
-    </p>
-  </div>
-  </br>
-  <div class="container">
-    <h2>My Role</h2>
-    <ol>
-      <li>
-        Understanding and defining the problem
-      </li>
-      <li>
-        Conduct a competitor Analysis
-      </li>
-      <li>
-        Create user stories and based on them user flow diagrams
-      </li>
-      <li>
-        Wireframing and Prototyping
-      </li>
-      <li>
-        User testing and Implementing the feedback
-      </li>
-      <li>
-        Create a product Brand
-      </li>
-      <li>
-        Visual and User Interface design
-      </li>
-    </ol>
-    </br>
-    <div class="container">
-      <h2>Solutions</h2>
-      <ul>
-        <li>Personalized account with detailed information on user expenditure and incomes</li>
-        <li>A functionality of setting saving goals</li>
-        <li>A complete overview of the expenditures, incomes and savings</li>
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <picture>
-        <source srcset="img/Pocket_Advisor/Artboard_2-1.jpg" />
-        <img src="img/Pocket_Advisor/Artboard_2-2.jpg" alt="Image of Work Sample" />
-      </picture>
-    </div>
-  </div>
-  <div class="container">
-    <h2>The Design Process</h2>
-  </div>
-  <div class="container">
-    <div class="row">
-      <picture>
-        <source srcset="img/Pocket_Advisor/Artboard_3-1.png" />
-        <img src="img/Pocket_Advisor/Artboard_3-2.png" alt="Image of Work Sample" />
-      </picture>
-    </div>
-  </div>
-  <div class="container">
-    <h1>Discovery</h1>
-    <h2>Defining the Problem</h2>
-    <p>
-      People who don't like to deal with their finances find it difficult to create saving goals.
-      Knowing how much they spend and on what can help them make saving plans. Having an overview of all the expenditures, incomes and savings in a one place can make
-      the mission of saving easier.
-    </p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <picture>
-        <source srcset="img/Pocket_Advisor/Artboard_4-1.jpg" />
-        <img src="img/Pocket_Advisor/Artboard_4-2.jpg" alt="Image of Work Sample" />
-      </picture>
-    </div>
-  </div>
-  </div>
 
   <div class="container">
     <h2>Competitor Analysis</h2>
@@ -573,7 +584,10 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
+  <!-- Added the Scroll To Top Button functions -->
   <script src="js/scrollBtn.js"></script>
+  <!-- Added the Modal Gallery functions -->
+  <script src="js/modalGallery.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
