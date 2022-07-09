@@ -44,114 +44,131 @@
   <main>
     <div id="hero">
       <div class="container">
-      <br>
-      <!-- Added the Scroll To Top Button -->
-      <button
-        onclick="topFunction()"
-        id="scrollBtn"
-        title="Go to top"
-        type="button"
-      >
-        <span class="arrowUp"></span>
-        <b><br/>Top</b>
-      </button>
-      <div class="center">
-        <h1>Easy Cooking Case Study</h1>
-      </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <picture>
-            <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg" />
-            <img src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" alt="Image of Work Sample" />
-          </picture>
+        <br>
+        <!-- Added the Scroll To Top Button -->
+        <button
+          onclick="topFunction()"
+          id="scrollBtn"
+          title="Go to top"
+          type="button"
+        >
+          <span class="arrowUp"></span>
+          <b><br/>Top</b>
+        </button>
+        <!-- The Case Study Section -->
+        <div class="center">
+          <h1>Easy Cooking Case Study</h1>
         </div>
       </div>
       <div class="container">
-        <h2>Introduction</h2>
-        <p>
-          The number of recipe products available on the web is astonishing. Yet the experience of finding recipes that work for anyone
-          in different scenarios can be overwhelming. Perhaps the ingredients aren't available locally, or they are too expensive. Some of the recipes take too much time and
-          the instructions are impossible to follow and/or the reviews are terrible.
-        </p>
-        <p>
-          Whatever the dilemma is, the fact is that there is a large number of recipe products out there that do not meet the needs of their users. Creating a web app that meets
-          all these needs and solves some other important issues is more than necessary.
-        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Introduction</h2>
+            <p>
+              The number of recipe products available on the web is astonishing. Yet the experience of finding recipes that work for anyone
+              in different scenarios can be overwhelming. Perhaps the ingredients aren't available locally, or they are too expensive. Some of the recipes take too much time and
+              the instructions are impossible to follow and/or the reviews are terrible.
+            </p>
+            <p>
+              Whatever the dilemma is, the fact is that there is a large number of recipe products out there that do not meet the needs of their users. Creating a web app that meets
+              all these needs and solves some other important issues is more than necessary.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg" />
+              <img class="w3-hover-opacity" src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" onclick="onClick(this)"/>
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Easy_Cooking/Artboard_1-1.jpg" />
+              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_1-2.jpg" onclick="onClick(this)"/>
+            </picture>  
+          </div>
+        </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>The Challenge</h2>
+            <p>
+              Design a responsive web app for recipes that meets the needs of its users and solves the problems they are facing with existing recipe apps.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2>The Solution</h2>
+            <p>
+              Easy Cooking is a responsive web app where the user can find easy recipes to use at any time of the day! The recipes are
+              accessible to everyone. The user has the opportunity to order local ingredients from local markets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h2>My Role</h2>
+          <div class="col-lg-6">
+            <h3>UX Design Process and Approach</h3>
+            <ul>
+              <li>Implementing the User Centered Design process and Design Thinking process</li>
+              <li>Applying the mobile-first approach to responsive web app design</li>
+              <li>Following the principles of Lean UX to design process</li>
+              <li>Prototyping rapid techniques used for early user feedback</li>
+              <li>Conduct competitor analysis</li>
+              <li>Conduct user research interviews</li>
+              <li>Conduct usability testing on mobile prototype</li>
+              <li>Create user personas</li>
+              <li>Elaborate a MVP document</li>
+              <li>Build a user flow diagram</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3>UI Design Process and Approach</h3>
+            <ul>
+              <li>Establish a visual direction of the product</li>
+              <li>Conduct a preference test of two different UI styles</li>
+              <li>Apply the responsive design patterns</li>
+              <li>Engage in a "crit" session with the users</li>
+              <li>Apply the feedback to designs</li>
+              <li>Create a mood board</li>
+              <li>Establish a style guide</li>
+              <li>Create low- to mid-fidelity responsive designs for the web app screens (XS, S, M, L)</li>
+              <li>Generate the final mockups for responsive designs, all screens and all breakpoints</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h2>The Design Process</h2>
+          <div class="col-lg-6">
+            <p>
+              The design process has been broken down into two phases: UX Design phase and UI Design phase. Both phases followed the steps of User Centered
+              Design and the Design Thinking process.
+            </p>   
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="img/Easy_Cooking/Artboard_2-1.png" />
+              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_2-2.png" onclick="onClick(this)"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Gallery for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
+          <i class="fa fa-times" aria-hidden="true"></i>
+      </span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>   
+    <hr> 
   </main>
-  </br>
-  <div class="container">
-    <h2>The Challenge</h2>
-    <p>
-      Design a responsive web app for recipes that meets the needs of its users and solves the problems they are facing with existing recipe apps.
-    </p>
-  </div>
-  </br>
-  <div class="container">
-    <div class="row">
-      <h2>My Role</h2>
-      <h4>UX Design Process and Approach</h4>
-      <ul>
-        <li>Implementing the User Centered Design process and Design Thinking process</li>
-        <li>Applying the mobile-first approach to responsive web app design</li>
-        <li>Following the principles of Lean UX to design process</li>
-        <li>Prototyping rapid techniques used for early user feedback</li>
-        <li>Conduct competitor analysis</li>
-        <li>Conduct user research interviews</li>
-        <li>Conduct usability testing on mobile prototype</li>
-        <li>Create user personas</li>
-        <li>Elaborate a MVP document</li>
-        <li>Build a user flow diagram</li>
-      </ul>
-    </div>
-    <div class="row">
-      <h4>UI Design Process and Approach</h4>
-      <ul>
-        <li>Establish a visual direction of the product</li>
-        <li>Conduct a preference test of two different UI styles</li>
-        <li>Apply the responsive design patterns</li>
-        <li>Engage in a "crit" session with the users</li>
-        <li>Apply the feedback to designs</li>
-        <li>Create a mood board</li>
-        <li>Establish a style guide</li>
-        <li>Create low- to mid-fidelity responsive designs for the web app screens (XS, S, M, L)</li>
-        <li>Generate the final mockups for responsive designs, all screens and all breakpoints</li>
-      </ul>
-    </div>
-  </div>
-  </br>
-  <div class="container">
-    <h2>The Solution</h2>
-    <p>
-      Easy Cooking is a responsive web app where the user can find easy recipes to use at any time of the day! The recipes are
-      accessible to everyone. The user has the opportunity to order local ingredients from local markets.
-    </p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <picture>
-        <source srcset="img/Easy_Cooking/Artboard_1-1.jpg" />
-        <img src="img/Easy_Cooking/Artboard_1-2.jpg" alt="Image of Work Sample" />
-      </picture>
-    </div>
-  </div>
-  <div class="container">
-    <h2>The Design Process</h2>
-    <p>
-      The design process has been broken down into two phases: UX Design phase and UI Design phase. Both phases followed the steps of User Centered
-      Design and the Design Thinking process.
-    </p>
-  </div>
-  </br>
-  <div class="container">
-    <div class="row">
-      <picture>
-        <source srcset="img/Easy_Cooking/Artboard_2-1.png" />
-        <img src="img/Easy_Cooking/Artboard_2-2.png" alt="Image of Work Sample" />
-      </picture>
-    </div>
-  </div>
   <div class="container">
     <h1>Discovery</h1>
     <h2>Competitor Analysis</h2>
@@ -699,8 +716,10 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
+  <!-- Added the Scroll To Top Button functions -->
   <script src="js/scrollBtn.js"></script>
+  <!-- Added the Modal Gallery functions -->
+  <script src="js/modalGallery.js"></script>
   <script src="js/scripts.js"></script>
 </body>
-
 </html>
