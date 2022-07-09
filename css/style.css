@@ -80,6 +80,10 @@ li {
   font-weight: 300;
 }
 
+footer {
+  padding: 2px 2px;
+}
+
 .button {
   display: inline-block;
   background-color: #f93;
