@@ -142,8 +142,7 @@ footer {
 }
 
 #work .row,
-#modalIllustrations
-{
+#modalIllustrations {
   padding-bottom: 25px;
   border-bottom: 0.01px solid rgb(214, 214, 214);
 }
