@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Easy Cooking Case Study</title>
   <!-- Added the favicon on the browser tab -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <!--Link to external CDN normalize.min.css file-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <!-- Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet" />
-  <!-- Scroll Button css stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+  <!-- Link to CDNs -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
   <!-- Custom css stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-
 <body>
   <header>
+    <!-- The NavBar section -->
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-          <img class="logo" srcset="img/logo/logo-1x.png 2x" src="img/logo/logo-1x.png" alt="Logo" />
+          <img class="logo" srcset="img/logo/logo-1x.png 2x" src="img/logo/logo-1x.png" alt="Logo"/>
         </a>
         <nav>
           <ul class="navigation">
@@ -40,12 +38,12 @@
       </div>
     </div>
   </header>
-
+  <!-- The main section -->
   <main>
     <div id="hero">
+      <!-- Added the Scroll To Top Button -->
       <div class="container">
         <br>
-        <!-- Added the Scroll To Top Button -->
         <button
           onclick="topFunction()"
           id="scrollBtn"
@@ -54,14 +52,14 @@
         >
           <span class="arrowUp"></span>
           <b><br/>Top</b>
-        </button>
-        <!-- The Case Study Section -->
-        <div class="center">
-          <h1>Easy Cooking Case Study</h1>
-        </div>
+        </button> 
       </div>
+      <!-- The Case Study section -->
       <div class="container">
         <div class="row">
+          <div class="center">
+            <h1>Easy Cooking Case Study</h1>
+          </div>
           <div class="col-lg-6">
             <h2>Introduction</h2>
             <p>
@@ -729,7 +727,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal Gallery for full size images on click-->
+    <!-- The Modal Gallery section -->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
       <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
           <i class="fa fa-times" aria-hidden="true"></i>
@@ -778,6 +776,7 @@
       </div>
     </div>
   </footer>
+  <!-- The JS functions section -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
   <!-- Added the Scroll To Top Button functions -->
