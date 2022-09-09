@@ -92,7 +92,7 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: #f93;
+  background-color: rgb(231, 111, 171);
   color: #fff;
   font-weight: 400;
   text-decoration: none;
@@ -103,30 +103,25 @@ footer {
   transition-property: opacity;
 }
 
-.button:hover {
+.button:hover,
+.button.contact:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
 .button:active {
   display: inline-block;
-  background-color: #f93;
+  background-color: rgb(255, 51, 177);
 }
 
 .button.contact {
-  background: transparent;
-  color: #336699;
+  background: rgb(231, 111, 171);
+  color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #336699;
+  border: 2px solid #3d4d4a;
   text-align: center;
   transition-duration: 0.2s;
   transition-property: opacity;
-}
-
-.button.contact:hover {
-  opacity: 0.9;
-  background: #ff9933;
-  color: #3d4d4a;
 }
 
 /* Layout styling */
@@ -143,7 +138,9 @@ footer {
 }
 
 #work .row,
-#modalIllustrations {
+#modalIllustrations,
+#welcome,
+#slideshow {
   padding-bottom: 25px;
   border-bottom: 0.01px solid rgb(214, 214, 214);
 }
@@ -173,7 +170,8 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
   transition: 0.3s;
-  background: #feae49;
+  background: rgb(231, 111, 171);
+  color: rgb(255, 255, 255);
 }
 
 .navtoggle,
@@ -364,8 +362,8 @@ header > div {
     padding: 10px;
   }
 
-  #project-links,
-  #my-illustrations {
+  #ui-ux-projects,
+  #illustration-projects {
     scroll-margin-top: 8rem;
   }
 }
@@ -393,8 +391,7 @@ header > div {
     margin-right: auto;
   }
 
-  #project-links,
-  #my-illustrations {
+  #project-links {
     scroll-margin-top: 8rem;
   }
 }
@@ -480,7 +477,7 @@ header > div {
 }
 
 #scrollBtn:hover {
-  background-color: #feae49;
+  background-color: rgb(231, 111, 171);
 }
 
 .arrowUp {
