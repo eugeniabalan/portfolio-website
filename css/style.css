@@ -362,7 +362,8 @@ header > div {
     padding: 10px;
   }
 
-  #project-links {
+  #ui-ux-projects,
+  #illustration-projects {
     scroll-margin-top: 8rem;
   }
 }
