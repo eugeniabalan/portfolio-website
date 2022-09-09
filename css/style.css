@@ -139,7 +139,8 @@ footer {
 
 #work .row,
 #modalIllustrations,
-#welcome {
+#welcome,
+#slideshow {
   padding-bottom: 25px;
   border-bottom: 0.01px solid rgb(214, 214, 214);
 }
@@ -361,8 +362,7 @@ header > div {
     padding: 10px;
   }
 
-  #project-links,
-  #my-illustrations {
+  #project-links {
     scroll-margin-top: 8rem;
   }
 }
@@ -390,8 +390,7 @@ header > div {
     margin-right: auto;
   }
 
-  #project-links,
-  #my-illustrations {
+  #project-links {
     scroll-margin-top: 8rem;
   }
 }

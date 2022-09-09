@@ -57,34 +57,14 @@
           <b><br>Top</b>
         </button>
       </div>
-      <!-- The Welcome section -->
-      <div id="welcome">
+      <!-- The Illustrations Slideshow section -->
+      <div id="slideshow">
         <div class="container">
           <div class="row">
             <div class="center">
-                <h1> Welcome to my website!</h1>
+              <h1>Illustration projects</h1>
             </div>
-            <div class="col-lg-7">
-              <p>
-                I am Eugenia, an UI/UX designer and illustrator based in Nürnberg.
-              </p>
-              <p>
-                I am passionate about User Centered Design, Design Thinking, human behaviour and in love with being creative.
-              </p>
-              <p>
-                I love creating clean, elegant, original and functional User Interface Designs for a delightful
-                User Experience.
-              </p>
-              <P>
-                Design and illustration are a part of my daily life now and it's a great pleasure
-                to explore them in so many different ways!
-              </P>
-              <p>
-                Take a look at my projects and don't hesistate to contact me if you are interested in working together!
-              </p>
-            </div>
-            <div class="col-lg-5">
-              <!-- The Illustrations Slideshow section -->
+            <div class="col-lg-10">
               <div class="w3-content w3-section crop">
                 <img
                   class="mySlides w3-hover-opacity"
@@ -136,80 +116,78 @@
           </div>
         </div>
       </div>
-      <!-- The Work section -->
-      <div id="work">
-        <div class="container">
-          <div class="row">
-            <div class="center" id="project-links">
-              <h1>UI/UX Projects</h1>
-            </div>
-            <div class="col-lg-7">
-              <picture>
-                <source srcset="img/Pocket_Advisor/Artboard_cover_1.jpg"/>
-                <img src="img/Pocket_Advisor/Artboard_cover_2.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Pocket Advisor project"/>
-                </a>
-              </picture>
-            </div>
-            <div class="col-lg-5">
-              <h3>Pocket Advisor</h3>
-              <p>
-                Pocket Advisor is a money-saving app that helps people save
-                money for a future expenditure or purchase. It helps users keep
-                on track easily with their expenses, incomes and savings.
-              </p>
-              <a href="Pocket_Advisor.html" class="button">View Case Study</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7">
-              <picture>
-                <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg"/>
-                <img src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Easy Cooking project"/>
-              </picture>
-            </div>
-            <div class="col-lg-5">
-              <h3>EasyCooking</h3>
-              <p>
-                EasyCooking is a responsive cooking app for people who don't
-                have much time to spend in the kitchen, but want to eat healthy
-                home-made food.
-              </p>
-              <a href="Easy_Cooking.html" class="button">View Case Study</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7">
-              <picture>
-                <source srcset="img/Connecting_Ideas/Artboard_1-1x.jpg"/>
-                <img src="img/Connecting_Ideas/Artboard_1-2x.jpg" class="w3-hover-opacity" onclick="onClick(this)" alt="Image Sample of the Connecting Ideas project" />
-              </picture>
-            </div>
-            <div class="col-lg-5">
-              <h3>Connecting Ideas</h3>
-              <p>
-                Connecting Ideas is a native app for people with teaching careers who look for daily rapid craft activities with children of different ages.
-              </p>
-              <a href="Connecting_Ideas.html" class="button">View Case Study</a>
-            </div>
-          </div>
-          <!-- The Modal Gallery section -->
-          <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-            <span
-              class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
-              title="Close Modal Gallery"
-            >
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
-            <div
-              class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-            >
-              <img id="img01" class="w3-image" />
-              <p id="caption" class="w3-opacity w3-large"></p>
-            </div>
+      <!-- The Modal Grid of Illustrations section -->
+      <div id="modalIllustrations" class="galleryRow">
+        <div class="column">
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_1.jpeg"
+            onclick="onClick(this)"
+          />
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_5.jpeg"
+            onclick="onClick(this)"
+          />
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_9.jpeg"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_2.jpeg"
+            onclick="onClick(this)"
+          />
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_6.jpeg"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_3.jpeg"
+            onclick="onClick(this)"
+          />
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_7.jpeg"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_4.jpeg"
+            onclick="onClick(this)"
+          />
+          <img
+            class="w3-hover-opacity"
+            src="img/Slides/My_Illustration_Slide_8.jpeg"
+            onclick="onClick(this)"
+          />
+        </div>
+        <!-- The Modal Gallery section -->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+          <span
+            class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Gallery"
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div
+            class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+          >
+            <img id="img01" class="w3-image" />
+            <p id="caption" class="w3-opacity w3-large"></p>
           </div>
         </div>
-      </div>
-    </div> 
+      </div>  
+    </div>  
   </main>
   <!-- The Footer section -->
   <footer id="contact">
