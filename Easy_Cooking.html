@@ -1,791 +1,1059 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Easy Cooking Case Study</title>
-  <!-- Added the favicon -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <!-- Link to CDNs -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-  <!-- Custom css stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-<body>
-  <header>
-    <!-- The NavBar section -->
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img class="logo" srcset="img/logo/logo-2x_v4.png 2x" src="img/logo/logo-1x_v4.png" alt="Logo" />
-        </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="index.html#ui-ux-projects">UI/UX</a></li>
-            <li><a href="Illustration_Projects.html">Illustrations</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- The main section -->
-  <main>
-    <div id="hero">
-      <!-- Added the Scroll To Top Button -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Easy Cooking Case Study</title>
+    <!-- Added the favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <!-- Link to CDNs -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- The NavBar section -->
       <div class="container">
-        <br>
-        <button
-          onclick="topFunction()"
-          id="scrollBtn"
-          title="Go to top"
-          type="button"
-        >
-          <span class="arrowUp"></span>
-          <b><br/>Top</b>
-        </button> 
-      </div>
-      <!-- The Case Study section -->
-      <div class="container">
-        <div class="row">
-          <div class="center">
-            <h1>Easy Cooking Case Study</h1>
-          </div>
-          <div class="col-lg-6">
-            <h2>Introduction</h2>
-            <p>
-              The number of recipe products available on the web is astonishing. Yet the experience of finding recipes that work for anyone
-              in different scenarios can be overwhelming. Perhaps the ingredients aren't available locally, or they are too expensive. Some of the recipes take too much time and
-              the instructions are impossible to follow and/or the reviews are terrible.
-            </p>
-            <p>
-              Whatever the dilemma is, the fact is that there is a large number of recipe products out there that do not meet the needs of their users. Creating a web app that meets
-              all these needs and solves some other important issues is more than necessary.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_1-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_1-2.jpg" onclick="onClick(this)"/>
-            </picture>  
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>The Challenge</h2>
-            <p>
-              Design a responsive web app for recipes that meets the needs of its users and solves the problems they are facing with existing recipe apps.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h2>The Solution</h2>
-            <p>
-              Easy Cooking is a responsive web app where the user can find easy recipes to use at any time of the day! The recipes are
-              accessible to everyone. The user has the opportunity to order local ingredients from local markets.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <h2>My Role</h2>
-          <div class="col-lg-6">
-            <h3>UX Design Process and Approach</h3>
-            <ul>
-              <li>Implementing the User Centered Design process and Design Thinking process</li>
-              <li>Applying the mobile-first approach to responsive web app design</li>
-              <li>Following the principles of Lean UX to design process</li>
-              <li>Prototyping rapid techniques used for early user feedback</li>
-              <li>Conduct competitor analysis</li>
-              <li>Conduct user research interviews</li>
-              <li>Conduct usability testing on mobile prototype</li>
-              <li>Create user personas</li>
-              <li>Elaborate a MVP document</li>
-              <li>Build a user flow diagram</li>
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              class="logo"
+              srcset="img/logo/logo-2x_v4.png 2x"
+              src="img/logo/logo-1x_v4.png"
+              alt="Logo"
+            />
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="index.html#ui-ux-projects">UI/UX</a></li>
+              <li><a href="Illustration_Projects.html">Illustrations</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
             </ul>
-          </div>
-          <div class="col-lg-6">
-            <h3>UI Design Process and Approach</h3>
-            <ul>
-              <li>Establish a visual direction of the product</li>
-              <li>Conduct a preference test of two different UI styles</li>
-              <li>Apply the responsive design patterns</li>
-              <li>Engage in a "crit" session with the users</li>
-              <li>Apply the feedback to designs</li>
-              <li>Create a mood board</li>
-              <li>Establish a style guide</li>
-              <li>Create low- to mid-fidelity responsive designs for the web app screens (XS, S, M, L)</li>
-              <li>Generate the final mockups for responsive designs, all screens and all breakpoints</li>
-            </ul>
-          </div>
+          </nav>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <h2>The Design Process</h2>
-          <div class="col-lg-6">
-            <p>
-              The design process has been broken down into two phases: UX Design phase and UI Design phase. Both phases followed the steps of User Centered
-              Design and the Design Thinking process.
-            </p>   
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_2-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_2-2.png" onclick="onClick(this)"/>
-            </picture>
+    </header>
+    <!-- The main section -->
+    <main>
+      <div id="hero">
+        <!-- Added the Scroll To Top Button -->
+        <div class="container">
+          <br />
+          <button
+            onclick="topFunction()"
+            id="scrollBtn"
+            title="Go to top"
+            type="button"
+          >
+            <span class="arrowUp"></span>
+            <b><br />Top</b>
+          </button>
+        </div>
+        <!-- The Case Study section -->
+        <div class="container">
+          <div class="row">
+            <div class="center">
+              <h1>Easy Cooking Case Study</h1>
+            </div>
+            <div class="col-lg-6">
+              <h2>Introduction</h2>
+              <p>
+                The number of recipe products available on the web is
+                astonishing. Yet the experience of finding recipes that work for
+                anyone in different scenarios can be overwhelming. Perhaps the
+                ingredients aren't available locally, or they are too expensive.
+                Some of the recipes take too much time and the instructions are
+                impossible to follow and/or the reviews are terrible.
+              </p>
+              <p>
+                Whatever the dilemma is, the fact is that there is a large
+                number of recipe products out there that do not meet the needs
+                of their users. Creating a web app that meets all these needs
+                and solves some other important issues is more than necessary.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Easy-Cooking_Cover_1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Easy-Cooking_Cover_2.jpg"
+                  alt="Easy Cooking Cover 2"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_1-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_1-2.jpg"
+                  alt="Artboard 1"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <h1>Discovery</h1>
-          <h2>Competitor Analysis</h2>
-          <div class="col-lg-6">
-            <p>
-              At this phase I analyzed the competitors through user psychology. I evaluated design principles, patterns, user behaviors which the competition uses to keep
-              the users engaged. This helped me shape a concept of the design I intend to create.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_3-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_3-2.jpg" onclick="onClick(this)"/>
-            </picture>
-        </div>
-      </div>
-      <div class="container">
-        <h2>Main insights</h2>
-        <div class="row">
-          <div class="col-lg-10">
-            <ol>
-              <li>
-                Applying the Hick's Law helps the user to take a decision easier.
-              </li>
-              <li>
-                A personalized approach makes the user feel unique and special.
-              </li>
-              <li>
-                Creating the design based on "Operant Conditioning and Addiction" pattern can make the user feel "punished" if he/she doesn't
-                agree to accept to take the call to actions.
-              </li>
-              <li>
-                Using Dark Patterns in design can determine the user leave the app/website and never come back.
-              </li>
-              <li>
-                Creating trust and focusing on the user personality is one of the most important ways to create a good user experience.
-              </li>
-            </ol>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>The Challenge</h2>
+              <p>
+                Design a responsive web app for recipes that meets the needs of
+                its users and solves the problems they are facing with existing
+                recipe apps.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h2>The Solution</h2>
+              <p>
+                Easy Cooking is a responsive web app where the user can find
+                easy recipes to use at any time of the day! The recipes are
+                accessible to everyone. The user has the opportunity to order
+                local ingredients from local markets.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h2>Conducting User Research</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>
-              After analyzing the competition, I conducted user research through the Research Learning Spiral.
-            </p>
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_4-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_4-2.jpg" onclick="onClick(this)"/>
-            </picture>
-            <h3>STEP 1: Setting the objectives (5W's)</h3>
-            <h4>
-              Who are you designing for?
-            </h4>
-            <p>
-              I am designing for 30 to 38 year old people who enjoy cooking using a cooking web app/website. The user I am designing for is not afraid to
-              try new recipes.
-            </p>
-            <h4>
-              What kind of tasks and goals will your audience be accomplishing as they use your website or app?
-            </h4>
-            <p>
-              The user will learn to cook fast and healthy food. The user will have the opportunity to learn about what he/she is cooking.
-              The user will explore new recipes with accessible ingredients in the local markets.
-            </p>
-            <h4>
-              When will your audience be engaging with your product?
-            </h4>
-            <p>
-              The user can use the web app at any time of the day, when he/she decides to cook.
-            </p>
-            <h4>
-              Where will your audience be using what you are designing?
-            </h4>
-            <p>
-              The user can use the web app anywhere.
-            </p>
-            <h4>
-              Why is your audience choosing to use what you design?
-            </h4>
-            <p>
-              The user will choose namely the web app I am designing because he/she can discover that cooking healthy food doesn't necessary need
-              to take a lot of time. He/she might find out that cooking can be a joy, not a burden!
-            </p>
-            <h4>
-              How will your user accomplish his/her goals?
-            </h4>
-            <p>
-              The user will be able to find the most important functionalities of the web app easily and access them.
-            </p>
-            <h3>STEP 2: Formulating a hypothesis to use as a foundation of the research</h3>
-            <p>
-              Cooking healthy food doesn't need to take more time than fast food.
-            </p> 
-            <h3>STEP 3: Conducting user interviews to get a sense of potential users</h3>
-            <p>
-              On this stage I formulated sets of questions regarding the cooking behavior of the potential users. I then conducted user interviews with
-              seven users between 30 and 38 years old.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h4>
-              Question Set 1:
-            </h4>
-            <p>
-              How often do you cook?
-            </p>
-            <p>
-              Do you eat more fast food or home cooked food?
-            </p>
-            <h4>
-              Question Set 2:
-            </h4>
-            <p>
-              Where are you getting your recipes?
-            </p>
-            <h4>
-              Question Set 3:
-            </h4>
-            <p>
-              Most of the times, do you cook alone or with some company?
-            </p>
-            <h4>
-              Question Set 4:
-            </h4>
-            <p>
-              Do you always cook the same recipes or you like exploring new ones?
-            </p>
-            <p>
-              What exactly do you like to cook the most? Why?
-            </p>
-            <h4>
-              Question Set 5:
-            </h4>
-            <p>
-              What was the last online resource you used to get a recipe?
-            </p>
-            <p>
-              What did you like about it?
-            </p>
-            <p>
-              What didn't you like about it?
-            </p>
-            <p>
-              What features do you think a useful cooking app/website should contain?
-            </p>
-            <h4>
-              Question Set 6:
-            </h4>
-            <p>
-              Where do you buy the ingredients for your cooking?
-            </p>
-            <p>
-              Why exactly are you shopping there?
-            </p>
-          </div>
-          
-          <div class="col-lg-6">
-            <h3>STEP 4: Analysing the patterns, frustrations, needs/goals of the users. Synthesising the feedback</h4>
-              <h4>Common Patterns</h4>
+        <div class="container">
+          <div class="row">
+            <h2>My Role</h2>
+            <div class="col-lg-6">
+              <h3>UX Design Process and Approach</h3>
               <ul>
-                <li>All the users I interviewed cook daily</li>
-                <li>They all get inspiration from online websites or web apps</li>
+                <li>
+                  Implementing the User Centered Design process and Design
+                  Thinking process
+                </li>
+                <li>
+                  Applying the mobile-first approach to responsive web app
+                  design
+                </li>
+                <li>Following the principles of Lean UX to design process</li>
+                <li>
+                  Prototyping rapid techniques used for early user feedback
+                </li>
+                <li>Conduct competitor analysis</li>
+                <li>Conduct user research interviews</li>
+                <li>Conduct usability testing on mobile prototype</li>
+                <li>Create user personas</li>
+                <li>Elaborate a MVP document</li>
+                <li>Build a user flow diagram</li>
               </ul>
-              <h4>Frustrations with the Actual Cooking Web Apps</h4>
+            </div>
+            <div class="col-lg-6">
+              <h3>UI Design Process and Approach</h3>
               <ul>
-                <li>Either the description of the recipes is not clear or it's too complicated</li>
-                <li>Unstructured content, too much information without clear categories</li>
+                <li>Establish a visual direction of the product</li>
+                <li>Conduct a preference test of two different UI styles</li>
+                <li>Apply the responsive design patterns</li>
+                <li>Engage in a "crit" session with the users</li>
+                <li>Apply the feedback to designs</li>
+                <li>Create a mood board</li>
+                <li>Establish a style guide</li>
+                <li>
+                  Create low- to mid-fidelity responsive designs for the web app
+                  screens (XS, S, M, L)
+                </li>
+                <li>
+                  Generate the final mockups for responsive designs, all screens
+                  and all breakpoints
+                </li>
               </ul>
-              <h4>Needs/Goals</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <h2>The Design Process</h2>
+            <div class="col-lg-6">
+              <p>
+                The design process has been broken down into two phases: UX
+                Design phase and UI Design phase. Both phases followed the steps
+                of User Centered Design and the Design Thinking process.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_2-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_2-2.png"
+                  alt="Artboard 2"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <h1>Discovery</h1>
+            <h2>Competitor Analysis</h2>
+            <div class="col-lg-6">
+              <p>
+                At this phase I analyzed the competitors through user
+                psychology. I evaluated design principles, patterns, user
+                behaviors which the competition uses to keep the users engaged.
+                This helped me shape a concept of the design I intend to create.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_3-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_3-2.jpg"
+                  alt="Artboard 3"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="container">
+            <h2>Main insights</h2>
+            <div class="row">
+              <div class="col-lg-10">
+                <ol>
+                  <li>
+                    Applying the Hick's Law helps the user to take a decision
+                    easier.
+                  </li>
+                  <li>
+                    A personalized approach makes the user feel unique and
+                    special.
+                  </li>
+                  <li>
+                    Creating the design based on "Operant Conditioning and
+                    Addiction" pattern can make the user feel "punished" if
+                    he/she doesn't agree to accept to take the call to actions.
+                  </li>
+                  <li>
+                    Using Dark Patterns in design can determine the user leave
+                    the app/website and never come back.
+                  </li>
+                  <li>
+                    Creating trust and focusing on the user personality is one
+                    of the most important ways to create a good user experience.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="container">
+            <h2>Conducting User Research</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <p>
+                  After analyzing the competition, I conducted user research
+                  through the Research Learning Spiral.
+                </p>
+                <picture>
+                  <source srcset="img/Easy_Cooking/Artboard_4-1.jpg" />
+                  <img
+                    class="w3-hover-opacity"
+                    src="img/Easy_Cooking/Artboard_4-2.jpg"
+                    alt="Artboard 4"
+                    onclick="onClick(this)"
+                  />
+                </picture>
+                <h3>STEP 1: Setting the objectives (5W's)</h3>
+                <h4>Who are you designing for?</h4>
+                <p>
+                  I am designing for 30 to 38 year old people who enjoy cooking
+                  using a cooking web app/website. The user I am designing for
+                  is not afraid to try new recipes.
+                </p>
+                <h4>
+                  What kind of tasks and goals will your audience be
+                  accomplishing as they use your website or app?
+                </h4>
+                <p>
+                  The user will learn to cook fast and healthy food. The user
+                  will have the opportunity to learn about what he/she is
+                  cooking. The user will explore new recipes with accessible
+                  ingredients in the local markets.
+                </p>
+                <h4>When will your audience be engaging with your product?</h4>
+                <p>
+                  The user can use the web app at any time of the day, when
+                  he/she decides to cook.
+                </p>
+                <h4>
+                  Where will your audience be using what you are designing?
+                </h4>
+                <p>The user can use the web app anywhere.</p>
+                <h4>Why is your audience choosing to use what you design?</h4>
+                <p>
+                  The user will choose namely the web app I am designing because
+                  he/she can discover that cooking healthy food doesn't
+                  necessary need to take a lot of time. He/she might find out
+                  that cooking can be a joy, not a burden!
+                </p>
+                <h4>How will your user accomplish his/her goals?</h4>
+                <p>
+                  The user will be able to find the most important
+                  functionalities of the web app easily and access them.
+                </p>
+                <h3>
+                  STEP 2: Formulating a hypothesis to use as a foundation of the
+                  research
+                </h3>
+                <p>
+                  Cooking healthy food doesn't need to take more time than fast
+                  food.
+                </p>
+                <h3>
+                  STEP 3: Conducting user interviews to get a sense of potential
+                  users
+                </h3>
+                <p>
+                  On this stage I formulated sets of questions regarding the
+                  cooking behavior of the potential users. I then conducted user
+                  interviews with seven users between 30 and 38 years old.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <h4>Question Set 1:</h4>
+                <p>How often do you cook?</p>
+                <p>Do you eat more fast food or home cooked food?</p>
+                <h4>Question Set 2:</h4>
+                <p>Where are you getting your recipes?</p>
+                <h4>Question Set 3:</h4>
+                <p>
+                  Most of the times, do you cook alone or with some company?
+                </p>
+                <h4>Question Set 4:</h4>
+                <p>
+                  Do you always cook the same recipes or you like exploring new
+                  ones?
+                </p>
+                <p>What exactly do you like to cook the most? Why?</p>
+                <h4>Question Set 5:</h4>
+                <p>
+                  What was the last online resource you used to get a recipe?
+                </p>
+                <p>What did you like about it?</p>
+                <p>What didn't you like about it?</p>
+                <p>
+                  What features do you think a useful cooking app/website should
+                  contain?
+                </p>
+                <h4>Question Set 6:</h4>
+                <p>Where do you buy the ingredients for your cooking?</p>
+                <p>Why exactly are you shopping there?</p>
+              </div>
+              <div class="col-lg-6">
+                <h3>
+                  STEP 4: Analysing the patterns, frustrations, needs/goals of
+                  the users. Synthesising the feedback
+                </h3>
+                <h4>Common Patterns</h4>
+                <ul>
+                  <li>All the users I interviewed cook daily</li>
+                  <li>
+                    They all get inspiration from online websites or web apps
+                  </li>
+                </ul>
+                <h4>Frustrations with the Actual Cooking Web Apps</h4>
+                <ul>
+                  <li>
+                    Either the description of the recipes is not clear or it's
+                    too complicated
+                  </li>
+                  <li>
+                    Unstructured content, too much information without clear
+                    categories
+                  </li>
+                </ul>
+                <h4>Needs/Goals</h4>
+                <ul>
+                  <li>A clear categorization of recipes</li>
+                  <li>Attractive imagery</li>
+                  <li>Search suggestions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h2>Creating User Personas</h2>
+          <div class="row">
+            <div class="col-lg-10">
+              <p>
+                Based on the information I gathered from the user research, I
+                created user personas.
+              </p>
+            </div>
+            <div class="col-lg-10">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_5-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_5-2.jpg"
+                  alt="Artboard 5"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h2>Establishing a MVP and the JTBD</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                After designing user personas and defining my users, I started
+                considering business requirements and breaking down the big
+                goals into milestones.
+              </p>
+              <h3>Minimum Viable Product</h3>
+              <h4>Feature Requirements</h4>
               <ul>
-                <li>A clear categorization of recipes</li>
-                <li>Attractive imagery</li>
-                <li>Search suggestions</li>
+                <li>
+                  Clear, well-organised search and navigation through the web
+                  app
+                </li>
+                <li>Leave, read comments and reviews</li>
+                <li>"Go back" to Home screen</li>
+                <li>
+                  Cooking for beginners category or a separated functionality on
+                  the Home screen
+                </li>
               </ul>
-          </div>
-          
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h2>Creating User Personas</h2>
-        <div class="row">
-          <div class="col-lg-10">
-            <p>
-              Based on the information I gathered from the user research, I created user personas.
-            </p>
-          </div>
-          <div class="col-lg-10">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_5-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_5-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h2>Establishing a MVP and the JTBD</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>
-              After designing user personas and defining my users, I started considering business requirements and breaking down the big goals
-              into milestones.
-            </p>
-            <h3>Minimum Viable Product<h3>
-            <h4>Feature Requirements</h4>
-            <ul>
-              <li>Clear, well-organised search and navigation through the web app</li>
-              <li>Leave, read comments and reviews</li>
-              <li>"Go back" to Home screen</li>
-              <li>Cooking for beginners category or a separated functionality on the Home screen</li>
-            </ul>
-            <h4>Success Metrics</h4>
-            <ul>
-              <li>Number of Sign-ups</li>
-              <li>Level of user engagement</li>
-              <li>Time spent on the web app</li>
-              <li>Types of reviews, comments and ratings</li>
-              <li>Numbers of views per post</p>
-            </ul>        
-          </div>
-          <div class="col-lg-6 center">
-            <h3>Jobs To Be Done</h3>
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_6-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_6-2.png" onclick="onClick(this)"/>
-            </picture>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_7-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_7-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>  
-      </div>
-      <hr>
-      <div class="container">
-        <h1>Concepting</h1>
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Creating the User Flow Diagram</h2>
-            <p>
-              At this stage, I created a user flow for each of the user stories. Each user flow had an entry point and a success criteria. Based on the
-              user flows, I built the final user flow diagram.
-            </p>
-          </div>
-          <div class="col-lg-6 cropPicture">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_8-1.png"/>
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_8-2.png" onclick="onClick(this)"/>
-            </picture>
+              <h4>Success Metrics</h4>
+              <ul>
+                <li>Number of Sign-ups</li>
+                <li>Level of user engagement</li>
+                <li>Time spent on the web app</li>
+                <li>Types of reviews, comments and ratings</li>
+                <li>Numbers of views per post</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 center">
+              <h3>Jobs To Be Done</h3>
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_6-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_6-2.png"
+                  alt="Artboard 6"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_7-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_7-2.jpg"
+                  alt="Artboard 7"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Wireframes</h2>
-            <p>
-              At this stage I had everything I needed to start sketching design solutions. To do so, I used the Crazy 8s methodology to generate ideas
-              for the user flows in my user flow diagram. After doing this, I "dot voted" the most viable design solutions from my sketches. Then I organized
-              my drawings to follow a linear user flow.
-            </p>
+        <hr />
+        <div class="container">
+          <h1>Concepting</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Creating the User Flow Diagram</h2>
+              <p>
+                At this stage, I created a user flow for each of the user
+                stories. Each user flow had an entry point and a success
+                criteria. Based on the user flows, I built the final user flow
+                diagram.
+              </p>
+            </div>
+            <div class="col-lg-6 cropPicture">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_8-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_8-2.png"
+                  alt="Artboard 8"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
           </div>
-          <div class="col-lg-6 cropPicture">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Wireframes</h2>
+              <p>
+                At this stage I had everything I needed to start sketching
+                design solutions. To do so, I used the Crazy 8s methodology to
+                generate ideas for the user flows in my user flow diagram. After
+                doing this, I "dot voted" the most viable design solutions from
+                my sketches. Then I organized my drawings to follow a linear
+                user flow.
+              </p>
+            </div>
+            <div class="col-lg-6 cropPicture">
               <picture>
                 <source srcset="img/Easy_Cooking/Artboard_9-1.jpg" />
-                <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_9-2.jpg" onclick="onClick(this)"/>
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_9-2.jpg"
+                  alt="Artboard 9"
+                  onclick="onClick(this)"
+                />
               </picture>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h1>Prototyping & User Testing</h1>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Prototyping and Conducting a Usability Test</h3>
+        <hr />
+        <div class="container">
+          <h1>Prototyping & User Testing</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Prototyping and Conducting a Usability Test</h3>
+              <p>
+                After sketching the low-fidelity wireframes, I wrote a usability
+                test script and conducted usability testing with five
+                participants. I tested the main functionalities of creating a
+                profile, sign-in to your profile, search for a recipe and
+                reading and writing a comment or review. I analyzed the results
+                of the test through using Jakob Nielsen's error severity rating
+                system. I proposed solutions for my design issues based on the
+                test results.
+              </p>
+            </div>
+            <div class="col-lg-6 cropPicture">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_10-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_10-2.png"
+                  alt="Artboard 10"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>User Interface Design. Building a Mood Board</h3>
+              <p>
+                After finding more sources of inspiration and refining my
+                findings, I used them to develop a visual direction for the
+                future product and I built a mood board to communicate it.
+              </p>
+            </div>
+            <div class="col-lg-6 cropPicture">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_11-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_11-2.jpg"
+                  alt="Artboard 11"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h2>Conducting a A/B Preference Test</h2>
+          <div class="row">
             <p>
-              After sketching the low-fidelity wireframes, I wrote a usability test script and conducted usability testing with five participants. I tested the main functionalities of
-              creating a profile, sign-in to your profile, search for a recipe and reading and writing a comment or review. I analyzed the results of the test through
-              using Jakob Nielsen's error severity rating system. I proposed solutions for my design issues based on the test results.
+              The next step in the process was to create a complete mockup of
+              the Onboarding screen, consulting the mood board. I created a
+              variation of this screen, using different images for the two
+              versions of the screen. After that I uploaded the design
+              variations on the UsabilityHub, labelling each of them clearly. I
+              waited to have minimum ten results to analyse which of the
+              versions the participants prefer.
             </p>
           </div>
-          <div class="col-lg-6 cropPicture">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_10-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_10-2.png" onclick="onClick(this)"/>
-            </picture>
-          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>User Interface Design. Building a Mood Board</h3>
-            <p>
-              After finding more sources of inspiration and refining my findings, I used them to develop a visual direction for the future product
-              and I built a mood board to communicate it.
-            </p>
-          </div>
-          <div class="col-lg-6 cropPicture">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_11-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_11-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h2>Conducting a A/B Preference Test</h2>
-        <div class="row">
-          <p>
-            The next step in the process was to create a complete mockup of the Onboarding screen, consulting the mood board. I created a variation of this screen, using different images for the two versions of the screen.
-            After that I uploaded the design variations on the UsabilityHub, labelling each of them clearly. I waited to have minimum ten results to analyse which of the versions
-            the participants prefer.
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <h3 class="center">Creating a Style Guide</h3>
-        <div class="col-lg-10">
-          <p>
-            Before designing the high-fidelity wireframes, I created a style guide for the product and brand.
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Color Palette</h3>
-            <p>The colors associate the product with earth (brown) vitality and health (orange, red, yellow), renewable energy and organic products (green).
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_12-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_12-2.png" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Typographic Style</h3>
-            <p>
-              As typefonts, I chose Quicksand in combination with Open Sans. The reason I chose Quicksand is because it creates a feeling of novelty, approachability
-              and openness. This is what the product aims to express. Open Sans has excellent legibility, is clean and has a friendly approach. It fits perfect
-              the brand value, of giving the product an approachable aspect. Together they give the product a modern and gettable look.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_13-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_13-2.png" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Imagery</h3>
-            <p>
-              The pictures contain vivid colors related to earth, vitality and health, renewable energy and organic food. They have a good resolution on all the XS, S, M and L screens.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_14-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_14-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Icons</h3>
-            <p>
-              All the icons look like they belong to one family. They give clear instructions about navigating through the app.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_15-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_15-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Buttons</h3>
-            <p>
-              The buttons have a simple and clear look. Their default state differentiates from the hover state.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_16-1.png" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_16-2.png" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <h2>High-Fidelity Wireframes & User Feedback</h2>
-        <div class="row">
+        <div class="container">
+          <h3 class="center">Creating a Style Guide</h3>
           <div class="col-lg-10">
             <p>
-              I applied the Style Guide to the User Interface design for the responsive screens. After doing that, I invited five potential users to
-              review my work and to provide feedback. I organized the feedback into two lists: one for constructive comments and one for positive comments.
+              Before designing the high-fidelity wireframes, I created a style
+              guide for the product and brand.
             </p>
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-10 cropPicture">
+            <div class="col-lg-6">
+              <h3>Color Palette</h3>
+              <p>
+                The colors associate the product with earth (brown) vitality and
+                health (orange, red, yellow), renewable energy and organic
+                products (green).
+              </p>
+            </div>
+            <div class="col-lg-6">
               <picture>
-                <source srcset="img/Easy_Cooking/Artboard_17-1.jpg" />
-                <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_17-2.jpg" onclick="onClick(this)"/>
+                <source srcset="img/Easy_Cooking/Artboard_12-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_12-2.png"
+                  alt="Artboard 12"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Typographic Style</h3>
+              <p>
+                As typefonts, I chose Quicksand in combination with Open Sans.
+                The reason I chose Quicksand is because it creates a feeling of
+                novelty, approachability and openness. This is what the product
+                aims to express. Open Sans has excellent legibility, is clean
+                and has a friendly approach. It fits perfect the brand value, of
+                giving the product an approachable aspect. Together they give
+                the product a modern and gettable look.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_13-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_13-2.png"
+                  alt="Artboard 13"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Imagery</h3>
+              <p>
+                The pictures contain vivid colors related to earth, vitality and
+                health, renewable energy and organic food. They have a good
+                resolution on all the XS, S, M and L screens.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_14-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_14-2.jpg"
+                  alt="Artboard 14"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Icons</h3>
+              <p>
+                All the icons look like they belong to one family. They give
+                clear instructions about navigating through the app.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_15-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_15-2.jpg"
+                  alt="Artboard 15"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Buttons</h3>
+              <p>
+                The buttons have a simple and clear look. Their default state
+                differentiates from the hover state.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_16-1.png" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_16-2.png"
+                  alt="Artboard 16"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h2>High-Fidelity Wireframes & User Feedback</h2>
+          <div class="row">
+            <div class="col-lg-10">
+              <p>
+                I applied the Style Guide to the User Interface design for the
+                responsive screens. After doing that, I invited five potential
+                users to review my work and to provide feedback. I organized the
+                feedback into two lists: one for constructive comments and one
+                for positive comments.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 cropPicture">
+                <picture>
+                  <source srcset="img/Easy_Cooking/Artboard_17-1.jpg" />
+                  <img
+                    class="w3-hover-opacity"
+                    src="img/Easy_Cooking/Artboard_17-2.jpg"
+                    alt="Artboard 17"
+                    onclick="onClick(this)"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h2>Final Mockups After Implementing the Feedback</h2>
+          <div class="row">
+            <div class="col-lg-10">
+              <p>
+                After receiving reviews and critiques from the testers, I
+                updated the screens and created the final mockups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Personalized Profile</h3>
+              <p>
+                The profile screen shows the user his/her activity. The recipes
+                he/she saved for later, the recipes he/she already used, his/her
+                shopping lists and week plans.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_18-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_18-2.jpg"
+                  alt="Artboard 18"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Categories</h3>
+              <p>
+                Choosing a category from the Home screen, the user has the
+                possibility to see how much time each recipe takes and how it is
+                rated by other users.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_19-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_19-2.jpg"
+                  alt="Artboard 19"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Recipe Screen</h3>
+              <p>
+                On the Recipe screen, the user gets clear, organized details
+                about how to prepare it.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_20-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_20-2.jpg"
+                  alt="Artboard 20"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Search Screen</h3>
+              <p>
+                The search is personalized for each user. The user can find
+                suggestions when he/she is not sure what to cook.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_21-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_21-2.jpg"
+                  alt="Artboard 21"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Home Screen</h3>
+              <p>
+                On the Home screen, the user can see the categorized recipes and
+                a guide for the beginners.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_22-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_22-2.jpg"
+                  alt="Artboard 22"
+                  onclick="onClick(this)"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="center">
+              <h2>Learnings</h2>
+            </div>
+            <div class="col-lg-6">
+              <h3>#1</h3>
+              <h3>
+                Testing at Early Stages Help You Shape the Design Direction
+              </h3>
+              <p>
+                Testing more and earlier is essential for the future of a
+                product. Users' feedback helps the designer to solve and prevent
+                small functionality problems before they become big ones.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>#2</h3>
+              <h3>
+                Users' Feedback Can Change Our Perspective, but Not the Whole
+                Direction
+              </h3>
+              <p>
+                After getting feedback from the users, the designer can feel
+                sometimes that the direction the product takes is totally wrong.
+                It doesn't have to be so. I think we as designers should always
+                keep in mind the customers' requirements, but be flexible about
+                the perspective we have to approach the problem.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>#3</h3>
+              <h3>Concentrate Your Design on Functionality</h3>
+              <p>
+                If you have to give up on some "decorative" element in your
+                design to make it functional, do it! Nobody needs beautiful, but
+                unfunctional products.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>#4</h3>
+              <h3>Have Some Fun on the Way</h3>
+              <p>
+                Meeting the deadlines is important, but also taking time in
+                between to enjoy the process is a good practice. From time to
+                time we need to detach ourselves to see new perspectives.
+              </p>
+            </div>
+            <div class="col-lg-10">
+              <picture>
+                <source srcset="img/Easy_Cooking/Artboard_23-1.jpg" />
+                <img
+                  class="w3-hover-opacity"
+                  src="img/Easy_Cooking/Artboard_23-2.jpg"
+                  alt="Artboard 23"
+                  onclick="onClick(this)"
+                />
               </picture>
             </div>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="container">
-        <h2>Final Mockups After Implementing the Feedback</h2>
-        <div class="row">
-          <div class="col-lg-10">
-            <p>
-              After receiving reviews and critiques from the testers, I updated the screens and created the final mockups.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Personalized Profile</h3>
-            <p>
-              The profile screen shows the user his/her activity. The recipes he/she saved for later, the recipes he/she already used, his/her shopping lists and week plans.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_18-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_18-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Categories</h3>
-            <p>
-              Choosing a category from the Home screen, the user has the possibility to see how much time each recipe takes and how it is rated by other users.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_19-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_19-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Recipe Screen</h3>
-            <p>
-              On the Recipe screen, the user gets clear, organized details about how to prepare it.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_20-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_20-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Search Screen</h3>
-            <p>
-              The search is personalized for each user. The user can find suggestions when he/she is not sure what to cook.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_21-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_21-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Home Screen</h3>
-            <p>
-              On the Home screen, the user can see the categorized recipes and a guide for the beginners.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_22-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_22-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <div class="center">
-            <h2>Learnings</h2>
-          </div>
-          <div class="col-lg-6">
-            <h3>#1</h3>
-            <h3>Testing at Early Stages Help You Shape the Design Direction</h3>
-            <p>
-              Testing more and earlier is essential for the future of a product. Users' feedback helps the designer to solve and prevent small functionality problems before they become big ones.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h3>#2</h3>
-            <h3>Users' Feedback Can Change Our Perspective, but Not the Whole Direction</h3>
-            <p>
-              After getting feedback from the users, the designer can feel sometimes that the direction the product takes is totally wrong. It doesn't have to be so. I think we as designers should always
-              keep in mind the customers' requirements, but be flexible about the perspective we have to approach the problem.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h3>#3</h3>
-            <h3>Concentrate Your Design on Functionality</h3>
-            <p>
-              If you have to give up on some "decorative" element in your design to make it functional, do it! Nobody needs beautiful, but unfunctional products.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h3>#4</h3>
-            <h3>Have Some Fun on the Way</h3>
-            <p>
-              Meeting the deadlines is important, but also taking time in between to enjoy the process is a good practice. From time to time we need to detach ourselves to see new perspectives.
-            </p>
-          </div>
-          <div class="col-lg-10">
-            <picture>
-              <source srcset="img/Easy_Cooking/Artboard_23-1.jpg" />
-              <img class="w3-hover-opacity" src="img/Easy_Cooking/Artboard_23-2.jpg" onclick="onClick(this)"/>
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- The Modal Gallery section -->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
+      <!-- The Modal Gallery section -->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        onclick="this.style.display='none'"
+      >
+        <span
+          class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+          title="Close Modal Gallery"
+        >
           <i class="fa fa-times" aria-hidden="true"></i>
-      </span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-          <img id="img01" class="w3-image">
+        </span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+        >
+          <img src="img01" id="img01" class="w3-image" alt="Slides" />
           <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
-    </div>
-    <hr> 
-  </main>
-  <!-- The Footer section -->
-  <footer id="contact">
-    <div class="container">
-      <div class="row">
-        <h3>Let's Work Together!</h3>
-      </div>
-      <div>
-        <p>
-        Would you like to work with me? Send me an Email to discuss opportunities.
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <a href="Contact.html" class="button contact">Email Me</a>
-    </div>
-    <div class="container">
-      <ul class="social-icons">
-        <li>
-          <a href="https://www.linkedin.com/in/eugenia-balan-50a687b3/" class="social" target="_blank">
-            <img src="img/LinkedIn.svg" width="32" height="32" alt="LinkedIn icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/eugeniabalan" class="social" target="_blank">
-            <img src="img/Behance.svg" width="32" height="32" alt="Behance icon" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h5>Copyright Eugenia Balan 2022</h5>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- The JS functions section -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/0720968ec1.js" crossorigin="anonymous"></script>
-  <!-- Added the Scroll To Top Button functions -->
-  <script src="js/scrollBtn.js"></script>
-  <!-- Added the Modal Gallery functions -->
-  <script src="js/modalGallery.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+      <hr />
+    </main>
+    <!-- The Footer section -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <h3>Let's Work Together!</h3>
+        </div>
+        <div>
+          <p>
+            Would you like to work with me? Send me an Email to discuss
+            opportunities.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <a href="Contact.html" class="button contact">Email Me</a>
+      </div>
+      <div class="container">
+        <ul class="social-icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/eugenia-balan-50a687b3/"
+              class="social"
+              target="_blank"
+            >
+              <img
+                src="img/LinkedIn.svg"
+                width="32"
+                height="32"
+                alt="LinkedIn icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.behance.net/eugeniabalan"
+              class="social"
+              target="_blank"
+            >
+              <img
+                src="img/Behance.svg"
+                width="32"
+                height="32"
+                alt="Behance icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h5>Copyright Eugenia Balan 2022</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- The JS functions section -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0720968ec1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Added the Scroll To Top Button functions -->
+    <script src="js/scrollBtn.js"></script>
+    <!-- Added the Modal Gallery functions -->
+    <script src="js/modalGallery.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
